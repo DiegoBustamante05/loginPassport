@@ -20,11 +20,18 @@ const schema = new Schema({
         max: 100,
         unique: true,
     },
-    admin: {
-        type: Boolean,
+    role: {
+        type: String,
+        default: 'user',
     },
     age: {
         type: Number,
+    },
+    cart: {
+        type: Schema.Types.ObjectId,
+        ref: "carts",
+        required: false,
+        max: 100,
     },
 });
 

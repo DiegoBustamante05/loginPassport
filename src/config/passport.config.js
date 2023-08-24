@@ -11,7 +11,7 @@ import {
 
 import {
     UserModel
-} from '../DAO/models/users.model.js';
+} from '../DAO/mongo/models/users.model.js';
 
 import GitHubStrategy from 'passport-github2';
 
@@ -91,7 +91,7 @@ export function iniPassport() {
         new GitHubStrategy(
             {
                 clientID: 'Iv1.e3b55afdf0d1320a',
-                clientSecret: ' ',
+                clientSecret: '22b358d8a5a5bec71096a49f0bd6d04c52fcc5ed',
                 callbackURL: 'http://localhost:8080/api/sessions/githubcallback',
             },
 

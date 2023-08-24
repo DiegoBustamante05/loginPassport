@@ -1,5 +1,5 @@
 import express from "express";
-import { CartModel } from "../DAO/models/carts.model.js";
+import { CartModel } from "../DAO/mongo/models/carts.model.js";
 import { CartService } from "../services/carts.service.js";
 
 const cartService = new CartService();
